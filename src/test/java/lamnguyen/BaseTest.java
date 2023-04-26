@@ -36,8 +36,6 @@ public class BaseTest {
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("RF8NB1NDPXA"); // Virtual phone in android studio or real device name
 		options.setChromedriverExecutable("C:\\Users\\ASUS\\eclipse-workspace\\Appium\\src\\test\\java\\resources\\chromedriver.exe");
-		//options.setCapability("browserName", "Chrome");
-		//String apkPath = "C:\\Users\\ASUS\\eclipse-workspace\\Appium\\src\\test\\java\\resources\\ApiDemos-debug.apk";
 		String apkPath = "C:\\Users\\ASUS\\eclipse-workspace\\Appium\\src\\test\\java\\resources\\General-Store.apk";
 		options.setApp(apkPath);
 		driver = new AndroidDriver(new URL(appiumServerConnection), options);
